@@ -17,9 +17,15 @@ const Products = () => {
   return (
     <div>
       <h1>Products</h1>
-      <div  style={{display:"grid",margin:"auto" , gridTemplateColumns:"repeat(4,200px)"}}>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(4,200px)",
+          margin: "auto",
+        }}
+      >
         {data.map((prod) => (
-          <Product prod ={prod} key={prod.id} />
+          <Product prod={prod} key={prod.id} />
         ))}
       </div>
     </div>
